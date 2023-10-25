@@ -18,6 +18,7 @@ export const ThemeToggler = styled.div`
   display: flex;
   gap: 0.5rem;
   font-weight: 600;
+  cursor: pointer;
 
   svg {
     fill: ${({ theme }) => theme.textColor};

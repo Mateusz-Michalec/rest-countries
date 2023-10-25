@@ -12,18 +12,26 @@ body {
     background: ${({ theme }) => theme.background};
     color:${({ theme }) => theme.textColor} 
 }
+button {
+  cursor: pointer;
+  border: none;
+}
+a {
+  text-decoration:none;
+  color: unset;
+}
 `;
 
 export const Main = styled.main`
-  padding: 30px 25px;
+  padding: 45px;
   margin: 0 auto;
 
   @media (min-width: 576px) {
-    max-width: 300px;
+    max-width: 500px;
   }
 
   @media (min-width: 768px) {
-    max-width: 500px;
+    max-width: 600px;
   }
 
   @media (min-width: 992px) {
@@ -31,7 +39,7 @@ export const Main = styled.main`
   }
 
   @media (min-width: 1200px) {
-    max-width: 900px;
+    max-width: 800px;
   }
 `;
 

@@ -32,7 +32,7 @@ export const SearchIconMuted = styled.svg`
 export const RegionSelectorWrapper = styled.div`
   position: relative;
   width: fit-content;
-  margin-top: 3rem;
+  margin-top: 2rem;
 `;
 
 export const SelectArrow = styled.svg`
@@ -48,10 +48,42 @@ export const RegionSelector = styled.select`
   -moz-appearance: none;
   padding: 15px 30px;
   padding-right: 45px;
-  border-right: 30px solid transparent;
   border: none;
   box-shadow: ${Common.boxShadow};
   background: ${({ theme }) => theme.elements};
   border-radius: ${Common.borderRadius};
-  //margin-top: 3rem;
+`;
+
+export const CountriesListWrapper = styled.div`
+  margin-top: 2rem;
+  display: grid;
+  gap: 2.5rem;
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`;
+
+export const CountryCardBrief = styled.div`
+  border-radius: ${Common.borderRadius};
+  box-shadow: ${Common.boxShadow};
+  background: ${({ theme }) => theme.elements};
+  cursor: pointer;
+  height: 100%;
+
+  img {
+    border-top-left-radius: ${Common.borderRadius};
+    border-top-right-radius: ${Common.borderRadius};
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+`;
+
+export const CountryCardBody = styled.div`
+  padding: 15px;
 `;
